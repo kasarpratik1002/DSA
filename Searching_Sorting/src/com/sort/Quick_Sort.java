@@ -1,5 +1,9 @@
 package com.sort;
-
+/*
+ * Time complexity Average case is O(nlogn) worst case O(n^2)
+ * Space complexity Average case is O(logn) and worst case O(n)
+ * 
+ */
 public class Quick_Sort {
 
 	public static void main(String[] args) {
