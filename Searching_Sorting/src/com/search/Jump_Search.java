@@ -18,7 +18,7 @@ public class Jump_Search {
 		int low=0;
 		int high=a.length-1;
 		int start=0;
-		while(low<=high&&(key>=a[low]&&key<=a[high])) {
+		while(low<=high) {
 			
 			if(key==a[low]) {
 				return low;
