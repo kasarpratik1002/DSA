@@ -19,7 +19,7 @@ public class Interpolation_Search {
 
 	private static int inter_Search(int[] a, int low, int high, int key) {
 		
-		while(low<=high&&(key>=a[low]&&key<=a[high])) {
+		while(low<=high) {
 			int pos=low+(int)((key-a[low])*(high-low)/(a[high]-a[low]));
 			
 			
