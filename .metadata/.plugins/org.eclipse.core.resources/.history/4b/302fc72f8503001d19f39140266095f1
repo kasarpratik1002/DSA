@@ -1,0 +1,32 @@
+package com.recursion.basic;
+
+import java.util.Stack;
+
+public class RevStack {
+
+	public static void main(String[] args) {
+		Stack<Integer>stack=new Stack<>();
+		
+		
+		stack.push(12);
+		stack.push(32);
+		stack.push(54);
+		reverse(stack);
+		while(!stack.isEmpty())
+		{
+			System.out.println(stack.pop());
+		}
+	}
+
+	private static void reverse(Stack<Integer> stack) {
+		int data=0;
+		if(stack.isEmpty()) {
+			stack.push(data);
+			return;
+		}
+		 data=stack.pop();
+		reverse(stack);
+		stack.push(data);
+		
+	}
+}

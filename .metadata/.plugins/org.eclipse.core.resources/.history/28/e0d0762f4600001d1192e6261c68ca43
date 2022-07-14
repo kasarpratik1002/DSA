@@ -1,0 +1,40 @@
+package com.recursion.basic;
+
+public class printLinkedList {
+	
+	
+	Node head=null;
+	static class Node{
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	public static void main(String[] args) {
+
+		Node node=new Node(12);
+
+		Node node1=new Node(12);
+
+		Node node2=new Node(12);
+
+		Node node3=new Node(12);
+
+		Node node4=new Node(12);
+		
+		node4.next=null;
+		node.next=node1;
+		node1.next=node2;
+		node2.next=node3;
+		node3.next=node4;
+		
+		head=node;
+		
+		printList(head);
+	}
+
+}

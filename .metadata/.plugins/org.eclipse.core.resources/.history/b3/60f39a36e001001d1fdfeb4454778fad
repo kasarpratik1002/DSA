@@ -1,0 +1,32 @@
+package com.recursion.basic;
+
+import java.util.Stack;
+
+public class MiddleElementStack {
+
+	public static void main(String[] args) {
+		
+		Stack<Integer> stack=new Stack<>();
+		
+		stack.push(12);
+		stack.push(32);
+		stack.push(333);
+		stack.push(65);
+		stack.push(76);
+		
+		getMiddle(stack,stack.size());
+	}
+
+	private static int getMiddle(Stack<Integer> stack, int size) {
+
+		if(size%2==0&&stack.size()==size/2) {
+			return stack.peek();
+		}
+		if(size%2==1&&stack.size()==size/2+1) {
+			return stack.peek();
+		}
+		
+		stack.pop();
+		return getMiddle(stack);
+	}
+}
