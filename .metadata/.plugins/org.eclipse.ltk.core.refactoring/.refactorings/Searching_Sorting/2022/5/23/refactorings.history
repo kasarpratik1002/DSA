@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void swap(int [] a, int i, int j)&apos; from &apos;com.sort.Quick_Sort.partition(...)&apos; to &apos;com.sort.Quick_Sort&apos;&#x0D;&#x0A;- Original project: &apos;Searching_Sorting&apos;&#x0D;&#x0A;- Method name: &apos;swap&apos;&#x0D;&#x0A;- Destination type: &apos;com.sort.Quick_Sort&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;swap&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.sort{Quick_Sort.java" name="swap" replace="false" selection="619 49" stamp="1653974419338" version="1.0" visibility="2"/>
+</session>

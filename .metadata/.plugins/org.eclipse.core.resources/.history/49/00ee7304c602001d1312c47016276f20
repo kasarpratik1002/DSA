@@ -1,0 +1,25 @@
+class SolutionvalidIP {
+
+    public boolean isValid(String s) {
+        // Write your code here
+        String arr[]=s.split("[.]+");
+        if(arr.length<4){
+            return false;
+        }
+        for(String str:arr){
+            if(str.length()>3)
+            {
+                return false;
+            }
+            try{
+                 if(!(Integer.valueOf(str)>=0&&Integer.valueOf(str)<=255)){
+                return false;
+            }
+            }catch(RuntimeException e){
+                return false;
+            }
+           
+        }
+        return true;
+    }
+}

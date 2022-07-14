@@ -1,0 +1,25 @@
+package com.recursion.basic;
+
+public class Stringrev {
+
+	public static void main(String[] args) {
+		
+		String str="pratik";
+		String rev=reverse(str);
+		System.out.println(rev);
+	}
+
+	private static String reverse(String str) {
+		
+		
+		if(str.length()==1) {
+			return str;
+		}
+		String c=str.charAt(str.length()-1)+"";
+		
+		str=str.replace(str.charAt(str.length()-1)+"","");
+		reverse(str);
+		str=c+str;
+		return str;
+	}
+}

@@ -1,0 +1,10 @@
+1655822179128	Extract method 'isEmpty'
+1656002770862	Extract method 'isEmpty'
+1656039559415	Rename method 'insertFront'
+1656039577474	Rename method 'insertRear'
+1656039593546	Rename method 'removeFront'
+1656039602069	Rename method 'deleteRear'
+1656039613094	Rename method 'front'
+1656039621109	Rename method 'rear'
+1656042845229	Delete element
+1656055842567	Rename type 'QueueUsingStack'

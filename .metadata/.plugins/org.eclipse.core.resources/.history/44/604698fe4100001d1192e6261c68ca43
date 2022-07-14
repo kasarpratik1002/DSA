@@ -1,0 +1,19 @@
+package com.recursion.basic;
+
+public class Pattern {
+
+	public static void main(String[] args) {
+		
+		int n=5;
+		printPattern(n);
+	}
+
+	private static void printPattern(int n) {
+
+		if(n==0) {
+			return;
+		}
+		System.out.println(printPattern(n-1));
+		
+	}
+}
